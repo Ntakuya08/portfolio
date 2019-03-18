@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta discription="中村拓哉のポートフォリオサイトです。">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Works - Fresh Kitchen｜UNDER THE SKY</title>
+</head>
+
+<body id="works_freshkitchen" class="works_common">
+  <div id="wrap">
+
+    <header class="fadesection" data-scroll-header>
+      <a href="index.html" class="logo">UNDER THE SKY</a>
+      <nav>
+        <ul class="global_nav">
+          <li><a href="index.html" class="nv_top">Top</a></li>
+          <li><a href="about.html" class="nv_about">About</a></li>
+          <li><a href="works.html" class="nv_works">Works</a></li>
+          <li><a href="contact.html" class="nv_contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contents">
+      <section class="works_detail fadesection">
+        <h2>Fresh Kitchen</h2>
+        <div class="worksimg">
+          <div class="works_wrap">
+            <div class="imgbox_pcui fk1"></div>
+            <p>PC UI</p>
+          </div>
+          <div class="centerline"></div>
+          <div class="works_wrap fadesection">
+            <div class="imgbox_spui fk2"></div>
+            <p>SmartPhone UI</p>
+          </div>
+        </div>
+        <div class="works_sentence fadesection font1">
+          <ul class="works_info">
+            <li>構成 : トップページのみ</li>
+            <li>制作期間 : 30時間程度</li>
+            <li>使用ツール : HTML / CSS / jQuery / Photoshop / XD</li>
+          </ul>
+          <p class="works_desc">
+            架空のレストランのウェブサイトです。トップぺージのみですが、Adobe XDを使用してデザインカンプから作成しました。制作期間はデザインカンプが2日、サイト自体が3日ほどです。カンプをできる限り詳細に制作したのでHTMLコーディングはスムーズに行えました。デザインはシンプルに見やすい形にまとめられたかと思っています。また、どのような画面サイズでも問題なく表示できるようレスポンシブ対応には力を入れました。
+          </p>
+          <p class="works_desc">
+            カンプを実寸より大きいサイズで作ってしまったため、フォントサイズや余白をカンプの通り設定できず調整に時間を食われたのが反省点です。jQueryを利用しましたがまだ理解が浅く、思うように動作せずその点でも時間を使ってしまいました。
+          </p>
+          <p class="font1">
+            カンプは<a href="https://xd.adobe.com/view/e2b133e8-2a1c-4c2a-7593-240beb194696-9480/" class="common_link" target="_blank" rel="noopener">こちら</a>からご覧いただけます。
+          </p>
+          <a href="#" class="common_link font1" target="_blank" rel="noopener"><i class="fas fa-angle-double-right"></i>サイトを見る</a>
+        </div>
+      </section>
+      <ul class="works_undernav fadesection">
+        <li class="left">
+          <a href="works_charlotte.html"><i class="fas fa-arrow-left"></i>Charlotte</a>
+        </li>
+        <li class="right">
+          <a href="works_infoacademy.html">INFO ACADEMY<i class="fas fa-arrow-right"></i></a>
+        </li>
+      </ul>
+      <div class="centering fadesection">
+        <a href="works.html" class="common_link">Works</a>
+      </div>
+    </main>
+
+    <footer class="fadesection">
+      <small>&copy; UNDER THE SKY</small>
+    </footer>
+
+  </div>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1500,
+    });
+
+  </script>
+
+  <script>
+    $(function() {
+      $('.fadesection').css('opacity', '0');
+    });
+
+  </script>
+
+  <script>
+    $(function() {
+      $(".fadesection").each(function(i) {
+        setTimeout(function() {
+          $(".fadesection").eq(i).addClass("animated fadeIn");
+        }, 100 * i);
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

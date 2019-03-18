@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.inview.min.js"></script>
+  <script>
+    (function(d) {
+      var config = {
+          kitId: 'xuq4ioc',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h = d.documentElement,
+        t = setTimeout(function() {
+          h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function() {
+        a = this.readyState;
+        if (f || a && a != "complete" && a != "loaded") return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config)
+        } catch (e) {}
+      };
+      s.parentNode.insertBefore(tk, s)
+    })(document);
+
+  </script>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate_custom.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>INFO ACADEMY</title>
+</head>
+
+<body>
+
+  <header class="openingfade">
+    <a href="index.html" class="logo_link"><img src="images/logo.png" alt="INFO ACADEMY"></a>
+    <div class="header_right">
+      <div id="nav_toggle">
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <p class="menu">MENU</p>
+          <p class="close">CLOSE</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li class="dd_toggle">
+            <a href="javascript:void(0)">コース<i class="fas fa-angle-down"></i></a>
+            <ul class="submenu sb1">
+              <li><a href="javascript:void(0)">コース一覧</a></li>
+              <li><a href=""><span>おすすめ！</span>プレミアムコース</a></li>
+              <li><a href="">Webサイトコース</a></li>
+              <li><a href="">Webデザインコース</a></li>
+              <li><a href="">フロントエンドコース</a></li>
+              <li><a href="">WordPressコース</a></li>
+              <li><a href="">Unityコース</a></li>
+              <li><a href="">iPhoneアプリコース</a></li>
+              <li><a href="">Androidアプリコース</a></li>
+              <li><a href="">Webアプリコース</a></li>
+              <li><a href="">Javaコース</a></li>
+              <li><a href="">Pythonコース</a></li>
+            </ul>
+          </li>
+          <li class="dd_toggle">
+            <a href="javascript:void(0)">初めての方へ<i class="fas fa-angle-down"></i></a>
+            <ul class="submenu sb2">
+              <li><a href="">INFO ACADEMYについて</a></li>
+              <li><a href="">無料体験について</a></li>
+              <li><a href="">受講申し込み</a></li>
+              <li><a href="">講師紹介</a></li>
+              <li><a href="">受講者の声</a></li>
+              <li><a href="">導入企業一覧</a></li>
+            </ul>
+          </li>
+          <li class="dd_toggle"><a href="#">就職サポート</a></li>
+          <li class="dd_toggle">
+            <a href="javascript:void(0)">ヘルプ<i class="fas fa-angle-down"></i></a>
+            <ul class="submenu sb3">
+              <li><a href="">法人のお客様へ</a></li>
+              <li><a href="">よくあるご質問</a></li>
+              <li><a href="">アクセス</a></li>
+              <li><a href="">お問い合わせ</a></li>
+            </ul>
+          </li>
+          <li class="dd_toggle sp_subnav">
+            <div class="sns flex">
+              <a href=""><img src="images/facebook.png" alt="facebook"></a>
+              <a href=""><img src="images/twitter.png" alt="twitter"></a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <a href="" class="freetrial header_btn">無料体験</a>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="openingfade">
+      <div class="heroimg">
+        <div class="maxwidth">
+          <p>受講者数<span>10,000名</span>突破！</p>
+          <p>プログラミングは難しい、そう思っていませんか？<br>「誰でも」「確実に」習得できるレッスンがここにあります。</p>
+          <a href="" class="freetrial btn2">無料でレッスンを体験する<i class="fas fa-angle-right"></i></a>
+        </div>
+      </div>
+    </h1>
+    <section id="about" class="animated fadesection">
+      <div class="maxwidth">
+        <h2>INFO ACADEMYとは？</h2>
+        <p>INFOACADEMY(インフォアカデミー)は<br class="sp_br">自分のスタイルに合わせて学べる<br class="sp_br">プログラミングスクールです。<br>
+          プログラミング未経験の方でも、<br class="sp_br">今あるスキルをさらに向上させたい方でも。<br>
+          仕事や学業の合間に学びたい方でも、<br class="sp_br">じっくり時間をかけて勉強したい方でも。<br>
+          どんな方でも確実に<br class="sp_br">ステップアップできることをお約束します。</p>
+        <a href="" class="common_btn">詳しく見る<i class="fas fa-angle-right"></i></a>
+      </div>
+    </section>
+    <section id="attribute" class="animated fadesection">
+      <div class="maxwidth">
+        <div class="animated fadesection">
+          <h2>INFO ACADEMYの3つの特徴</h2>
+          <div class="attr_figure">
+            <div>
+              <img src="images/attr_icon1_b.png" alt="選べる学習スタイル">
+              <p>選べる学習スタイル</p>
+            </div>
+            <div>
+              <img src="images/attr_icon2_b.png" alt="現役エンジニアによるマンツーマン指導">
+              <p>現役エンジニアによる<br>マンツーマン指導</p>
+            </div>
+            <div>
+              <img src="images/attr_icon3_b.png" alt="徹底した就職サポート">
+              <p>徹底した就職サポート</p>
+            </div>
+          </div>
+        </div>
+        <div class="attr_box animated fadesection">
+          <section class="attr_left">
+            <h3>選べる学習スタイル</h3>
+            <p>ご自身の都合に合わせて、会場での受講とオンライン受講を選択することができます。もちろん両方を利用することも可能です。会場では講師と直接コミュニケーションを取りながら学ぶことができます。オンラインなら受講の時間帯・一日あたりの受講時間を柔軟にカスタマイズできます。</p>
+            <p><i class="fas fa-check"></i>自分に合ったやり方で学習できる！</p>
+            <a href="" class="common_btn">詳しく見る<i class="fas fa-angle-right"></i></a>
+          </section>
+          <img src="images/attr1.jpg" alt="自分に合ったやり方で学習できる" class="attr_right">
+        </div>
+        <div class="attr_box animated fadesection">
+          <section class="attr_left">
+            <h3>現役エンジニアによるマンツーマン指導</h3>
+            <p>第一線で活躍するプロのエンジニア達がマンツーマンで丁寧に指導を行うため、独学ではなかなか続かないという方にも安心して受講いただけます。分からない点があればいつでも直接、またはチャットで質問してください。カリキュラムの内容のみにとどまらず、現役ならではの実務的な知識もお伝えします。</p>
+            <p><i class="fas fa-check"></i>詰まることなくスムーズに学習できる！</p>
+            <a href="" class="common_btn">講師紹介へ<i class="fas fa-angle-right"></i></a>
+          </section>
+          <img src="images/attr2.jpg" alt="詰まることなくスムーズに学習できる" class="attr_right">
+        </div>
+        <div class="attr_box animated fadesection">
+          <section class="attr_left">
+            <h3>徹底した就職サポート</h3>
+            <p>プログラミングを学び終えることがゴールではありません。当校では学習後の就職のサポートまで徹底して行います。専門のスタッフが一人一人に合ったキャリアプランをご提案。就職についてご不安な点があればいつでも、何度でも相談可能です。大手企業・成長中の企業への多数の就職実績があります。</p>
+            <p><i class="fas fa-check"></i>学習内容を生かして理想のキャリアを実現！</p>
+            <a href="" class="common_btn">詳しく見る<i class="fas fa-angle-right"></i></a>
+          </section>
+          <img src="images/attr3.jpg" alt="学習内容を生かして理想のキャリアを実現" class="attr_right">
+        </div>
+      </div>
+    </section>
+    <section id="curriculum" class="animated fadesection">
+      <h2>INFO ACADEMYで学べること</h2>
+      <p>Webサイト制作・Webデザイン・アプリ開発など、<br class="sp_br">コース別に目的に合ったスキルを無駄なく習得できます。</p>
+      <img src="images/curriculum.png" alt="curriculum" class="climg_pc">
+      <img src="images/curriculum_sp.png" alt="curriculum" class="climg_sp">
+      <a href="" class="common_btn">コース一覧へ<i class="fas fa-angle-right"></i></a>
+    </section>
+    <section id="result" class="animated fadesection">
+      <div class="maxwidth">
+        <h2>INFO ACADEMYの実績</h2>
+        <div class="result_wrap">
+          <div class="result_box">
+            <img src="images/result1.jpg" alt="受講生の声">
+            <p>総受講者数<span class="emphasis">10,000名以上</span><span class="addition">※1</span>、受講後の満足度<span class="emphasis">97.1%</span><span class="addition">※2</span>！<br>
+              受講された方々から喜びの声を多数いただいています</p>
+            <a href="" class="common_btn">受講生の声を見る<i class="fas fa-angle-right"></i></a>
+            <p class="addition_text">
+              ※1 … 2019年1月時点
+            </p>
+            <p class="addition_text">
+              ※2 … 受講後アンケートより 2019年1月時点
+            </p>
+          </div>
+          <div class="result_box">
+            <img src="images/result2.jpg" alt="導入企業">
+            <p>
+              <span class="emphasis">100社以上</span>の企業の研修プログラムとして<br>
+              当校のカリキュラムが導入されています
+            </p>
+            <a href="" class="common_btn">導入企業一覧<i class="fas fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="trial animated fadesection_in">
+      <h3>まずは無料でお試しください</h3>
+      <a href="" class="freetrial btn2">無料でレッスンを体験する<i class="fas fa-angle-right"></i></a>
+      <p>実際のカリキュラムを<br class="sp_br">そのまま体験していただけます</p>
+    </div>
+  </main>
+
+  <footer class="animated fadesection_in">
+    <div class="footer_wrap">
+      <a href="index.html" class="logo_link"><img src="images/logo.png" alt="INFO ACADEMY"></a>
+      <ul class="footer_nav">
+        <li><a href="">運営会社</a></li>
+        <li><a href="">採用情報</a></li>
+        <li><a href="">ニュースリリース</a></li>
+        <li><a href="">お問い合わせ</a></li>
+      </ul>
+      <div class="sns">
+        <a href=""><img src="images/facebook.png" alt="facebook"></a>
+        <a href=""><img src="images/twitter.png" alt="twitter"></a>
+      </div>
+      <ul class="footer_nav_sub">
+        <li><a href="">プライバシーポリシー</a></li>
+        <li><a href="">利用規約</a></li>
+        <li><a href="">特定商取引法に基づく表示</a></li>
+        <li><a href="">サイトマップ</a></li>
+        <li class="copyright">
+          <small>&copy;2019 INFO ACADEMY</small>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    $('.dd_toggle').on({
+      mouseover: function() {
+        $(this).children('ul').addClass('open');
+      },
+      mouseout: function() {
+        $(this).children('ul').removeClass('open');
+      }
+    });
+
+    $(function() {
+      $('.fadesection').on('inview', function(event, isInView) {
+        if (isInView) {
+          $(this).addClass('fadeInUp');
+        }
+      });
+      $('.fadesection_in').on('inview', function(event, isInView) {
+        if (isInView) {
+          $(this).addClass('fadeIn');
+        }
+      });
+    });
+
+    $(function() {
+      $('.common_btn').mouseover(function() {
+        $(this).addClass('cb_mouseover');
+        $(this).removeClass('cb_mouseout');
+      }).mouseout(function() {
+        $(this).addClass('cb_mouseout');
+        $(this).removeClass('cb_mouseover');
+      });
+    });
+
+    $('#nav_toggle').click(function() {
+      $(this).toggleClass('open');
+      $('nav').toggleClass('open');
+    });
+
+    $(function() {
+      $(".dd_toggle").on("click", function() {
+        var windowWidth = window.innerWidth;
+        if (windowWidth <= 800) {
+          $(this).children('ul').slideToggle();
+          $(this).find('i').toggleClass('rotate');
+        }
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>

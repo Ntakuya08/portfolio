@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta discription="中村拓哉のポートフォリオサイトです。">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Works - Charlotte｜UNDER THE SKY</title>
+</head>
+
+<body id="works_charlotte" class="works_common">
+  <div id="wrap">
+
+    <header class="fadesection" data-scroll-header>
+      <a href="index.html" class="logo">UNDER THE SKY</a>
+      <nav>
+        <ul class="global_nav">
+          <li><a href="index.html" class="nv_top">Top</a></li>
+          <li><a href="about.html" class="nv_about">About</a></li>
+          <li><a href="works.html" class="nv_works">Works</a></li>
+          <li><a href="contact.html" class="nv_contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contents">
+      <section class="works_detail fadesection">
+        <h2>Charlotte</h2>
+        <div class="worksimg">
+          <div class="works_wrap">
+            <div class="imgbox_pcui ch1"></div>
+            <p>PC UI</p>
+          </div>
+          <div class="centerline"></div>
+          <div class="works_wrap fadesection">
+            <div class="imgbox_spui ch2"></div>
+            <p>SmartPhone UI</p>
+          </div>
+        </div>
+        <div class="works_sentence fadesection font1">
+          <ul class="works_info">
+            <li>グループ制作</li>
+            <li>構成 : トップページ+下層4ページ (私の担当箇所はトップページのみ)</li>
+            <li>制作期間 : 50時間程度</li>
+            <li>使用ツール : HTML5 / CSS3</li>
+          </ul>
+          <p class="works_desc">
+            グループワークで制作したサイトです。架空の雑貨屋を紹介する内容となっています。私はコーダーリーダーを務め、ヘッダー・フッターなどの共通部分とトップページの制作、各ページのHTML・CSSファイルのまとめを担当しました。コンセプト決定のための話し合い、コーディング、まとめ作業などすべて含め10日間ほどかけて制作しました。多くの部分は既存の別サイトの構成を参考に作りましたが、とても勉強になりました。レスポンシブへの対応を初めて行ったためその点でも学ぶことが多かったです。</p>
+          <a href="http://ks604a.penne.jp/team/k-charlotte/" class="common_link font1" target="_blank" rel="noopener"><i class="fas fa-angle-double-right"></i>サイトを見る</a>
+        </div>
+      </section>
+      <ul class="works_undernav fadesection">
+        <li class="left">
+          <a href="works_kojicafe.html"><i class="fas fa-arrow-left"></i>Koji Cafe</a>
+        </li>
+        <li class="right">
+          <a href="works_freshkitchen.html">Fresh Kitchen<i class="fas fa-arrow-right"></i></a>
+        </li>
+      </ul>
+      <div class="centering fadesection">
+        <a href="works.html" class="common_link">Works</a>
+      </div>
+    </main>
+
+    <footer class="fadesection">
+      <small>&copy; UNDER THE SKY</small>
+    </footer>
+
+  </div>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1500,
+    });
+  </script>
+
+  <script>
+    $(function() {
+      $('.fadesection').css('opacity', '0');
+    });
+  </script>
+
+  <script>
+    $(function() {
+      $(".fadesection").each(function(i) {
+        setTimeout(function() {
+          $(".fadesection").eq(i).addClass("animated fadeIn");
+        }, 100 * i);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
