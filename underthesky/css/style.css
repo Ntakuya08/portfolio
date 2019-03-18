@@ -219,6 +219,10 @@ h2 {
   background-image: url(../images/site03.jpg);
 }
 
+.work04 {
+  background-image: url(../images/site04.jpg);
+}
+
 .work_ph {
   background-image: url(../images/ps_thumbnail.jpg);
 }
@@ -369,21 +373,30 @@ h3::before {
   margin-bottom: 1vw;
 }
 
-.ch1 {
+#works_charlotte .imgbox_pcui {
   background-image: url(../images/charlotte_pc.jpg);
 }
 
-.ch2 {
+#works_charlotte .imgbox_spui {
   background-image: url(../images/charlotte_sp.jpg);
 }
 
-.fk1 {
+#works_freshkitchen .imgbox_pcui {
   background-image: url(../images/freshkitchen_pc.jpg);
   background-position: top;
 }
 
-.fk2 {
+#works_freshkitchen .imgbox_spui {
   background-image: url(../images/freshkitchen_sp.jpg);
+}
+
+#works_infoacademy .imgbox_pcui {
+  background-image: url(../images/infoacademy_full_pc.jpg);
+  background-position: top;
+}
+
+#works_infoacademy .imgbox_spui {
+  background-image: url(../images/infoacademy_full_sp.jpg);
 }
 
 .works_detail img {
@@ -468,6 +481,16 @@ h3::before {
 
 .lum-lightbox {
   z-index: 1000;
+}
+
+#works_kojicafe .imgbox_pcui {
+  max-width: 80vw;
+  margin-bottom: 30px;
+  width: 100%;
+  max-height: 500px;
+  height: 30vw;
+  background: url(../images/kojicafe01.jpg);
+  background-size: cover;
 }
 
 /*contact----------*/
@@ -720,6 +743,7 @@ small {
 
   .works_flex {
     display: flex;
+    flex-wrap: wrap;
   }
 
   #works .works_box div {
