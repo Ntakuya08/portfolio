@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta discription="中村拓哉のポートフォリオサイトです。">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>About｜UNDER THE SKY</title>
+</head>
+
+<body id="about">
+  <div id="wrap">
+
+    <header class="fadesection" data-scroll-header>
+      <a href="index.html" class="logo">UNDER THE SKY</a>
+      <nav>
+        <ul class="global_nav">
+          <li><a href="index.html" class="nv_top">Top</a></li>
+          <li><a href="about.html" class="nv_about">About</a></li>
+          <li><a href="works.html" class="nv_works">Works</a></li>
+          <li><a href="contact.html" class="nv_contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contents fadesection">
+      <h2>About</h2>
+      <section class="this_site fadesection">
+        <h3>This Site</h3>
+        <p class="font1">
+          中村拓哉のポートフォリオサイトです。<br>
+          現在は仕事での制作物がないため、独自に制作したサイトを作品として掲載しています。<br><br>
+          このサイトは2018年11月頃に制作し、以後不定期に改修やコンテンツの追加を行っています。<br>
+          シンプルで落ち着いた雰囲気があり、作品が見やすいサイトを目指して制作しました。
+        </p>
+      </section>
+      <section class="profile fadesection">
+        <h3>Profile</h3>
+        <p class="font1">
+          中村 拓哉 <span>Takuya Nakamura</span>
+          <br>北海道札幌市在住
+        </p>
+      </section>
+      <section class="skills fadesection">
+        <h3>Skills</h3>
+        <p class="font1">
+          HTML5 / CSS3 / Photoshop CC / Illustrator CC<br>
+          jQuery、JavaScript、PHP、WordPress、AfterEffectsなどを勉強中<br>
+          Webクリエイター能力認定試験エキスパート保有
+        </p>
+      </section>
+      <div class="return fadesection">
+        <a href="index.html" class="common_link return_top font1">
+          <i class="fas fa-arrow-left"></i>トップへ戻る</a>
+      </div>
+    </main>
+
+    <footer class="fadesection">
+      <small>&copy; UNDER THE SKY</small>
+    </footer>
+
+  </div>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1500,
+    });
+  </script>
+
+  <script>
+    $(function() {
+      $('.fadesection').css('opacity', '0');
+    });
+  </script>
+
+  <script>
+    $(function() {
+      $(".fadesection").each(function(i) {
+        setTimeout(function() {
+          $(".fadesection").eq(i).addClass("animated fadeIn");
+        }, 100 * i);
+      });
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta discription="中村拓哉のポートフォリオサイトです。">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
+  <link rel="icon" href="images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Works｜UNDER THE SKY</title>
+</head>
+
+<body id="works">
+  <div id="wrap">
+
+    <header class="fadesection" data-scroll-header>
+      <a href="index.html" class="logo">UNDER THE SKY</a>
+      <nav>
+        <ul class="global_nav">
+          <li><a href="index.html" class="nv_top">Top</a></li>
+          <li><a href="about.html" class="nv_about">About</a></li>
+          <li><a href="works.html" class="nv_works">Works</a></li>
+          <li><a href="contact.html" class="nv_contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="contents fadesection">
+      <h2>Works</h2>
+      <p class="sp_text font1">画像をタップすると詳細ページへ移動します。</p>
+      <p class="pc_text font1">画像をクリックすると詳細ページへ移動します。</p>
+      <section class="websites fadesection">
+        <h3>Websites</h3>
+        <div class="works_flex websites_section">
+          <div class="works_box">
+            <a href="works_infoacademy.html">
+              <div class="work04">
+                <div class="blackout">
+                  <p style="color: #ffffff; font-size:18px;">INFO ACADEMY</p>
+                </div>
+              </div>
+            </a>
+            <div class="works_text">
+              <p>INFO ACADEMY</p>
+            </div>
+          </div>
+          <div class="works_box">
+            <a href="works_freshkitchen.html">
+              <div class="work03">
+                <div class="blackout">
+                  <p style="color: #ffffff; font-size:18px;">Fresh Kitchen</p>
+                </div>
+              </div>
+            </a>
+            <div class="works_text">
+              <p>Fresh Kitchen</p>
+            </div>
+          </div>
+          <div class="works_box">
+            <a href="works_charlotte.html">
+              <div class="work02">
+                <div class="blackout">
+                  <p style="color: #ffffff; font-size:18px;">Charlotte</p>
+                </div>
+              </div>
+            </a>
+            <div class="works_text">
+              <p>Charlotte</p>
+            </div>
+          </div>
+          <div class="works_box">
+            <a href="works_kojicafe.html">
+              <div class="work01 border1">
+                <div class="blackout">
+                  <p style="color: #ffffff; font-size:18px;">Koji Cafe</p>
+                </div>
+              </div>
+            </a>
+            <div class="works_text">
+              <p>Koji Cafe</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="others fadesection">
+        <h3>Others</h3>
+        <div class="works_flex others_section">
+          <div class="works_box">
+            <a href="works_photoshop.html">
+              <div class="work_ph border1">
+                <div class="blackout">
+                  <p style="color: #ffffff; font-size:18px;">Photoshop<br>Works</p>
+                </div>
+              </div>
+            </a>
+            <div class="works_text">
+              <p>Photoshop<br>Works</p>
+            </div>
+          </div>
+          <div class="works_box">
+            <a href="works_illustrator.html">
+              <div class="work_ai border1">
+                <div class="blackout">
+                  <p style="color: #ffffff; font-size:18px;">Illustrator<br>Works</p>
+                </div>
+              </div>
+            </a>
+            <div class="works_text">
+              <p>Illustrator<br>Works</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="return fadesection">
+        <a href="index.html" class="common_link return_top font1">
+          <i class="fas fa-arrow-left"></i>トップへ戻る</a>
+      </div>
+    </main>
+
+    <footer class="fadesection">
+      <small>&copy; UNDER THE SKY</small>
+    </footer>
+
+  </div>
+
+  <script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+      speed: 1500,
+    });
+
+  </script>
+
+  <script>
+    $(function() {
+      $('.fadesection').css('opacity', '0');
+    });
+
+  </script>
+
+  <script>
+    $(function() {
+      $(".fadesection").each(function(i) {
+        setTimeout(function() {
+          $(".fadesection").eq(i).addClass("animated fadeIn");
+        }, 100 * i);
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
